@@ -1,22 +1,23 @@
 public class Ejercicio {
     float salarioSinAjuste;
     float aumento;
-    float SalarioConAjuste;
-    public Ejercicio(float salarioSinAjuste, float aumento, float SalarioConAjuste) {
-        this.salarioSinAjuste=0;
-        this.aumento=0;
-        this.SalarioConAjuste= 0;
+    float salarioConAjuste;
     
+    public Ejercicio(float salarioSinAjuste, float aumento, float salarioConAjuste) {
+        this.salarioSinAjuste = salarioSinAjuste;
+        this.aumento = aumento;
+        this.salarioConAjuste = salarioConAjuste;
     }
+
     public float calcularSalario(){
         if (salarioSinAjuste<1300606) {
-            
+            salarioConAjuste=salarioSinAjuste + (aumento * salarioSinAjuste);
         } else {
-            
+            salarioConAjuste=salarioSinAjuste;
         }
 
 
-        return SalarioConAjuste;
+        return salarioConAjuste;
 
     }
 }
