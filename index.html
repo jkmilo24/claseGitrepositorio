@@ -13,90 +13,169 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="nav-main">
-            <img src="img/images.jpeg" alt="CAPCALI LOGO" class="nav-logo">
-            <ul class="nav-menu">
-                <li>
-                    <a href="#">Estilos</a>
-                </li>
-                <li>
-                    <a href="#">Colores</a>
-                </li>
-                <li>
-                    <a href="#">Artificil Intelligence</a>
-                </li>
-                <li>
-                    <a href="#">Machine learning</a>
-                </li>
-                <li>
-                    <a href="#">Quantum computing</a>
-                </li>
-                <li>
-                    <a href="#">Startup</a>
-                </li>
-                <li>
-                    <a href="#">More</a>
-                </li>
+    <header class="header">
+        <img src="img/images.jpeg" alt="CAPCALI LOGO" class="nav-logo">
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="img/menu-svgrepo-com.svg" class="menu-icono"  alt="menu-icono">
+        </label>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">GORRAS</a>
+                    <ul>
+                        <li><a href="#">MUJER</a></li>
+                        <li><a href="#">HOMBRE</a></li>
+                        <li><a href="#">NIÑOS</a></li>
+                    </ul>
+                </li>   
             </ul>
-            <ul class="nav-menu-rigth">
-                <li>
-                    <a href="#">
-                     <i class="fas fa-search"></i>
-                    </a>
-
-                </li>
-
-
+            <ul>
+                <li><a href="#">ESTILOS</a>
+                    <ul>
+                        <li><a href="#">ESTILO DEPORTIVO</a></li>
+                        <li><a href="#">ESTILO CLASICO</a></li>
+                    </ul>
+                </li>        
             </ul>
+            <ul>
+                <li><a href="#">MARCAS</a>
+                    <ul>
+                        <li><a href="#">NEW ERA</a></li>
+                        <li><a href="#">LACOSTE</a></li>
+                        <li><a href="#">NEW YORK</a></li>
+                    </ul>
+                </li>  
+            </ul>
+            <div class="container-icon">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-cart"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                        />
+                    </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                    <div class="container-cart-products hidden-cart">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Gorra Nike</p>
+                                <span class="precio-producto-carrito">$50.000</span>
+                            </div>
+                            <svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon-close"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						    </svg>
+                        </div>
+                        <div class="cart-total">
+                            <h3>Total:</h3>
+                            <span class="total-pagar">$20000</span>
+                        </div>
+                    </div>
+            </div>
         </nav>
-        <hr>
-
+    </header>        
+    <hr>
         <!-- SHOWCASE -->
         <header class="showcase">
-        <h2>Nombre producto</h2>
+        <h2>Nuevo Producto</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatum amet labore totam cumque voluptas voluptatibus ratione corporis facilis in, eveniet impedit voluptate accusamus enim odit commodi sit inventore quo?</p>
 
         <a href="#" class="btn">Read More <i class="fas fa-angle-double-right"></i></a>
-
         </header>
 
-        <!-- NEWS CARDS-->
-        <div class="news-cards">
-            <div>
-                <img src="img/news1.jpg" alt="News 1">
-                <h3>Nombre pagina.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi dolore tempora vel laborum officia consequuntur odio itaque aperiam quasi?</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/news2.jpg" alt="News 1">
-                <h3>Nombre pagina.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi dolore tempora vel laborum officia consequuntur odio itaque aperiam quasi?</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/news3.jpg" alt="News 1">
-                <h3>Nombre pagina.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi dolore tempora vel laborum officia consequuntur odio itaque aperiam quasi?</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/news4.jpg" alt="News 1">
-                <h3>Nombre pagina.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi dolore tempora vel laborum officia consequuntur odio itaque aperiam quasi?</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
-            </div>
-
+        <!-- CONTAINER ITEMS -->
+    <div class="container-items">
+           <div class="item">
+                <figure>
+                    <img src="img/nike2.jpeg" 
+                    alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Gorra Nike</h2>
+                    <p class="precio">$50.000</p>
+                    <button>Añadir al carrito</button>
+                </div>
+           </div> 
+         <div class="item">
+            <figure>
+                <img src="img/new era.jpeg" 
+                alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Gorra New Era</h2>
+                <p class="precio">$70.000</p>
+                <button>Añadir al carrito</button>
+             </div>
+         </div> 
+       <div class="item">
+        <figure>
+            <img src="img/lacoste.jpeg" 
+            alt="producto">
+        </figure>
+        <div class="info-product">
+            <h2>Gorra Lacoste</h2>
+            <p class="precio">$100.000</p>
+            <button>Añadir al carrito</button>
         </div>
-
-
-
-
-
+       </div>
+       <div class="item">
+        <figure>
+            <img src="img/new york.jpeg" 
+            alt="producto">
+        </figure>
+        <div class="info-product">
+            <h2>Gorra New York</h2>
+            <p class="precio">$99.900</p>
+            <button>Añadir al carrito</button>
+        </div>
+       </div> 
+       <div class="item">
+        <figure>
+            <img src="img/lacoste1.png" 
+            alt="producto">
+        </figure>
+        <div class="info-product">
+            <h2>Gorro Lacoste</h2>
+            <p class="precio">$85.000</p>
+            <button>Añadir al carrito</button>
+        </div>
+       </div>
+       <div class="item">
+        <figure>
+            <img src="img/nike1.png" 
+            alt="producto">
+        </figure>
+        <div class="info-product">
+            <h2>Gorra Nike</h2>
+            <p class="precio">$99.900</p>
+            <button>Añadir al carrito</button>
+        </div>
+       </div>
     </div>
 
+    
 
 
+    <script src="index.js"></script>
 </body>
 </html>
